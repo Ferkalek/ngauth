@@ -1,0 +1,16 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let user of users">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="cart-title">{{user.first_name}} {{user.last_name}}</h5>
+        <p class="card-text">
+          <img [src]="user.avatar" alt="">
+        </p>
+        <button type="button" class="btn btn-primary">Read more</button>
+      </div>
+      <div class="card-footer text-muted">
+        {{user.email}}
+      </div>
+    </div>
+  </div>
+</div>
